@@ -6,7 +6,7 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>Developer HomePage</title>
+		<title>BAReview</title>
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 		<meta content="" name="description" />
 		<meta content="" name="author" />
@@ -21,6 +21,7 @@
 		<link href="assets/css/theme/default.css" rel="stylesheet" id="theme" />
 		<!-- ================== END BASE CSS STYLE ================== -->
 		<!-- ================== BEGIN PAGE LEVEL CSS STYLE ================== -->
+		<link href="assets/plugins/bootstrap-wysihtml5/src/bootstrap-wysihtml5.css" rel="stylesheet" />
 		<link href="assets/plugins/DataTables/css/data-table.css" rel="stylesheet" />
 		<link href="assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet" />
 
@@ -46,7 +47,7 @@
 				<div class="container-fluid">
 					<!-- begin mobile sidebar expand / collapse button -->
 					<div class="navbar-header">
-						<a href="index.html" class="navbar-brand"><span class="navbar-logo"></span>Feature Portal</a>
+						<a href="baindex.html" class="navbar-brand"><span class="navbar-logo"></span>Feature Portal</a>
 						<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
                         <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
                         </span>
@@ -67,9 +68,9 @@
 						</li>
 						<li class="dropdown">
 							<a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle f-s-14">
-								<i class="fa fa-bell-o"></i><span class="label">3</span> </a>
+								<i class="fa fa-bell-o"></i><span class="label">1</span> </a>
 							<ul class="dropdown-menu media-list pull-right animated fadeInDown">
-								<li class="dropdown-header">Notifications (3)</li>
+								<li class="dropdown-header">Notifications (1)</li>
 								<li class="media">
 									<a href="javascript:;">
 										<div class="media-left">
@@ -77,7 +78,7 @@
 										</div>
 										<div class="media-body">
 											<h6 class="media-heading">
-                                        Feature Reject</h6>
+                                        Feature Update</h6>
 											<div class="text-muted f-s-11">
 												3 minutes ago</div>
 										</div>
@@ -88,8 +89,8 @@
 						</li>
 						<li class="dropdown navbar-user">
 							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="assets/img/user-12.jpg" alt="" />
-								<span class="hidden-xs">Developer</span> <b class="caret"></b></a>
+								<img src="assets/img/user-4.jpg" alt="" />
+								<span class="hidden-xs">Bussiness Analyst</span> <b class="caret"></b></a>
 							<ul class="dropdown-menu animated fadeInLeft">
 								<li class="arrow"></li>
 								<li><a href="javascript:;">Edit Profile</a></li>
@@ -113,10 +114,10 @@
 						<li class="nav-profile">
 							<div class="image">
 								<a href="javascript:;">
-									<img src="assets/img/user-12.jpg" alt="" /></a>
+									<img src="assets/img/user-4.jpg" alt="" /></a>
 							</div>
 							<div class="info">
-								Slahser^^ <small>Front end developer</small>
+								BurNing <small>Bussiness Analyst</small>
 							</div>
 						</li>
 					</ul>
@@ -127,14 +128,14 @@
 						<li class="has-sub"><a href="javascript:;"><b class="caret pull-right"></b><i
                         class="fa fa-table"></i><span>Features</span> </a>
 							<ul class="sub-menu">
-								<li><a href="index.html">My Features</a></li>
-								<li><a href="rejectedFeatures.html">Pending Features</a></li>
-								<li><a href="confirmedFeatures.html">Confirmed Features</a></li>
+								<li><a href="baindex.html">Review Features</a></li>
+								<li><a href="barejectedFeatures.html">Pending Features</a></li>
+								<li><a href="baconfirmedFeatures.html">Confirmed Features</a></li>
 							</ul>
 						</li>
-						<li><a href="Search.html"><i class="fa fa-search"></i> <span>Search</span></a></li>
+						<li><a href="baSearch.html"><i class="fa fa-search"></i> <span>Search</span></a></li>
 
-						<li><a href="releaseInfo.html"><i class="fa fa-info"></i> <span>Release Info</span></a></li>
+						<li><a href="baReleaseInfo.html"><i class="fa fa-info"></i> <span>Release Info</span></a></li>
 
 						<!-- end sidebar minify button -->
 					</ul>
@@ -150,7 +151,7 @@
 				<!-- begin breadcrumb -->
 				<!-- end breadcrumb -->
 				<!-- begin page-header -->
-				<h1 class="page-header">Update Your Feature</h1>
+				<h1 class="page-header">Confirmed Feature</h1>
 				<!-- end page-header -->
 				<div class="row">
 					<!-- begin col-12 -->
@@ -165,103 +166,77 @@
 									<div class="form-group">
 										<label class="control-label col-md-3">Feature ID</label>
 										<div class="col-md-9">
-											<input type="text" class="form-control" value="100_100_001_002" />
+											<input type="text" class="form-control" value="100_100_001_002" disabled />
 										</div>
 									</div>
-									<div class="form-group">
-										<label class="col-md-3 control-label">Organization</label>
+									<div class="form-group" disabled>
+										<label class="col-md-3 control-label"> Organization</label>
 										<div class="col-md-9">
-											<select class="form-control">
-                                            <option>OOCL</option>
-                                            <option>SS</option>
-                                        </select>
+											<input type="text" class="form-control" value="OOCL" disabled/>
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-3 control-label">Domain</label>
 										<div class="col-md-9">
-											<select class="form-control">
-											<option>Master Data</option>
-                                            <option>Accounts Receivable and Payable</option>
-                                            <option>Advanced Customs Module</option>
-                                            <option>Aggregated Domain</option>
-                                            <option>Alliance Slot Management</option>
-                                            <option>Booking Confirmation Rules</option>
-                                            <option>Command and Control</option>
-                                            <option>Common</option>
-                                            <option>Customs Declaration Module</option>
-                                            <option>Contribution Matrix</option>
-                                            <option>Customer Profile</option>
-                                            <option>Dashboard</option>
-                                            <option>DG Hazardous Maintenance</option>
-                                            <option>Discharge Process Monitoring and Control</option>
-                                            <option>Documentation</option>
-                                            <option>E-Sales</option>
-                                        </select>
+											<input type="text" class="form-control" value="Master Data" disabled />
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-3 control-label">Application Name</label>
 										<div class="col-md-9">
-											<input type="text" class="form-control" value="GSP Geography" />
+											<input type="text" class="form-control" value="GSP Geography" disabled />
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-3 control-label">Feature Name</label>
 										<div class="col-md-9">
-											<input type="text" class="form-control" value="Find Geographic Location" />
+											<input type="text" class="form-control" value="Find Geographic Location" disabled/>
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-3 control-label">Release Target</label>
 										<div class="col-md-9">
-											<select class="form-control">
-                                            <option>22.6</option>
-                                            <option>22.5POST</option>
-                                            <option>22.7</option>
-                                            <option>22.8</option>
-                                            <option>22.9</option>
-                                        </select>
+											<input type="text" class="form-control" value="22.6" disabled />
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-3 control-label">Permission Required</label>
 										<div class="col-md-9">
 											<label class="radio-inline">
-                                            <input type="radio" name="optionsRadios" value="option1" onchange="hideMultiPermissions()" checked />
+                                            <input type="radio" name="optionsRadios" value="option1" onchange="hideMultiPermissions()"  disabled />
                                             Enable Only
                                         </label>
 											<label class="radio-inline">
-                                            <input type="radio" name="optionsRadios" value="option2" onchange="showMultiPermissions()"/>
-                                            Multi-Permissions
+                                            <input type="radio" name="optionsRadios" value="option2" onchange="showMultiPermissions()" checked />
+                                            Multi-Permissions 
                                         </label>
 										</div>
 									</div>
-									<div class="form-group" id="multibox" style="display: none;">
+									<div class="form-group" id="multibox" style="display: " ";">
 										<label class="col-md-3 control-label"></label>
 										<div class="col-md-9">
 											<label class="checkbox-inline">
-                                            <input type="checkbox" value="" />
+                                            <input type="checkbox" value="" checked disabled/>
                                             View
                                         </label>
 											<label class="checkbox-inline">
-                                            <input type="checkbox" value="" />
+                                            <input type="checkbox" value="" checked disabled/>
                                             Create
                                         </label>
 											<label class="checkbox-inline">
-                                            <input type="checkbox" value="" />
+                                            <input type="checkbox" value="" disabled/>
                                             Edit
                                         </label>
 											<label class="checkbox-inline">
-                                            <input type="checkbox" value="" />
+                                            <input type="checkbox" value="" disabled/>
                                             Delete
                                         </label>
 											<label class="checkbox-inline">
-                                            <input type="checkbox" value="" />
+                                            <input type="checkbox" value="" disabled/>
                                             Approve
                                         </label>
 											<label class="checkbox-inline">
-                                            <input type="checkbox" value="" />
+                                            <input type="checkbox" value="" disabled/>
                                             Special
                                         </label>
 										</div>
@@ -270,11 +245,11 @@
 										<label class="col-md-3 control-label">Cross Carrier</label>
 										<div class="col-md-9">
 											<label class="radio-inline">
-                                            <input type="radio" name="carrierRadios" value="option1"   />
+                                            <input type="radio" name="carrierRadios" value="option1" disabled  />
                                             Y
                                         </label>
 											<label class="radio-inline">
-                                            <input type="radio" name="carrierRadios" value="option2" checked/>
+                                            <input type="radio" name="carrierRadios" value="option2" checked disabled/>
                                             N
                                         </label>
 										</div>
@@ -283,11 +258,11 @@
 										<label class="col-md-3 control-label">Delegatable</label>
 										<div class="col-md-9">
 											<label class="radio-inline">
-                                            <input type="radio" name="delegatableRadios" value="option1"  />
+                                            <input type="radio" name="delegatableRadios" value="option1" disabled />
                                             Y
                                         </label>
 											<label class="radio-inline">
-                                            <input type="radio" name="delegatableRadios" value="option2" checked/>
+                                            <input type="radio" name="delegatableRadios" value="option2" checked disabled/>
                                             N
                                         </label>
 										</div>
@@ -296,11 +271,11 @@
 										<label class="col-md-3 control-label">Has Qualifier</label>
 										<div class="col-md-9">
 											<label class="radio-inline">
-                                            <input type="radio" name="qualifierRadios" value="option1" onchange="showQualifier()" />
+                                            <input type="radio" name="qualifierRadios" value="option1" onchange="showQualifier()" checked disabled/>
                                             Y
                                         </label>
 											<label class="radio-inline">
-                                            <input type="radio" name="qualifierRadios" value="option2" onchange="hideQualifier()" checked/>
+                                            <input type="radio" name="qualifierRadios" value="option2" onchange="hideQualifier()"  disabled/>
                                             N
                                         </label>
 										</div>
@@ -308,14 +283,13 @@
 									<div class="form-group">
 										<label class="col-md-3 control-label">Feature Description</label>
 										<div class="col-md-9">
-											<textarea class="form-control" rows="5">Pending</textarea>
+											<textarea class="form-control" rows="5" disabled>Pending</textarea>
 										</div>
 									</div>
 
 									<div class="form-group">
-										<label class="col-md-3 control-label">Submit</label>
-										<div class="col-md-9">
-											<button type="submit" class="btn btn-sm btn-success">Submit Button</button>
+										<div class="col-md-12">
+											<a href="batest.html" class="btn btn-sm btn-success" style="float: right;">Test Feature</a>
 										</div>
 									</div>
 								</form>
@@ -330,7 +304,7 @@
 			<!-- end #content -->
 
 			<!-- begin #content -->
-			<div id="qualifierForm" class="content" style="display: none;">
+			<div id="qualifierForm" class="content" style="display: " ";">
 				<!-- begin breadcrumb -->
 				<!-- end breadcrumb -->
 				<!-- begin page-header -->
@@ -345,28 +319,23 @@
 									<div class="form-group">
 										<label class="col-md-3 control-label">Qualifier Type</label>
 										<div class="col-md-9">
-											<select class="form-control">
-                                            <option>Constant</option>
-                                            <option>Relationship</option>
-                                        </select>
+											<input type="text" class="form-control" value="Constant" disabled />
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-3 control-label">Qualifier Name</label>
 										<div class="col-md-9">
-											<input type="text" class="form-control" />
+											<input type="text" class="form-control" value="Qualifier Name" disabled />
 										</div>
 									</div>
 									<div class="form-group">
 										<label class="col-md-3 control-label">Description</label>
 										<div class="col-md-9">
-											<input type="text" class="form-control" />
+											<input type="text" class="form-control" value="Some Description" disabled />
 										</div>
 									</div>
 							</div>
 							</form>
-							<button class="btn btn-sm btn-success" onclick="addQualifier()" style="float: right;bottom: 0;">Insert New Qualifier</button>
-
 						</div>
 					</div>
 					<!-- end panel -->
@@ -437,15 +406,21 @@
 		<script src="assets/plugins/jquery-tag-it/js/tag-it.min.js"></script>
 		<script src="assets/js/form-plugins.demo.min.js"></script>
 		<script src="assets/js/apps.min.js"></script>
+		<script src="assets/plugins/bootstrap-wysihtml5/lib/js/wysihtml5-0.3.0.js"></script>
+		<script src="assets/plugins/bootstrap-wysihtml5/src/bootstrap-wysihtml5.js"></script>
+		<script src="assets/js/form-wysiwyg.demo.min.js"></script>
 		<!-- ================== END PAGE LEVEL JS ================== -->
 
 		<script>
 			$(document).ready(function() {
 				App.init();
-				//DashboardV2.init();
-				//TableManageDefault.init();
 				FormPlugins.init();
+				FormWysihtml5.init();
 			});
+
+			function back2Index() {
+				window.open("batest.html")
+			}
 
 			function showMultiPermissions() {
 				document.getElementById("multibox").style.display = "";

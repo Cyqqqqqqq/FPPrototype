@@ -127,31 +127,15 @@
 						<li class="has-sub"><a href="javascript:;"><b class="caret pull-right"></b><i
                         class="fa fa-table"></i><span>Features</span> </a>
 							<ul class="sub-menu">
-								<li><a href="">My Features</a></li>
-								<li><a href="">Rejected Features</a></li>
-								<li><a href="">Confirmed Features</a></li>
+								<li><a href="index.html">My Features</a></li>
+								<li><a href="rejectedFeatures.html">Pending Features</a></li>
+								<li><a href="confirmedFeatures.html">Confirmed Features</a></li>
 							</ul>
 						</li>
-						<li class="has-sub">
-							<a href="javascript:;">
-								<i class="fa fa-search"></i><span>Search</span> </a>
-							<ul class="sub-menu">
-								<li><a href="">Current Release</a></li>
-								<li><a href="">All Features</a></li>
-								<li><a href="">Confirmed</a></li>
-								<li><a href="">Rejected</a></li>
-							</ul>
-						</li>
-						<li class="has-sub"><a href="javascript:;"><b class="caret pull-right"></b><i class="fa fa-info">
-                    </i><span>Release Info</span> </a>
-							<ul class="sub-menu">
-								<li><a href="">Current Release</a></li>
-								<li><a href="">Next Release</a></li>
-							</ul>
-						</li>
-						<!-- begin sidebar minify button -->
-						<li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i
-                        class="fa fa-angle-double-left"></i></a></li>
+						<li><a href="Search.html"><i class="fa fa-search"></i> <span>Search</span></a></li>
+
+						<li><a href="releaseInfo.html"><i class="fa fa-info"></i> <span>Release Info</span></a></li>
+
 						<!-- end sidebar minify button -->
 					</ul>
 					<!-- end sidebar nav -->
@@ -178,12 +162,7 @@
 							</div>
 							<div class="panel-body">
 								<form class="form-horizontal">
-									<div class="form-group">
-										<label class="control-label col-md-3">Feature ID</label>
-										<div class="col-md-9">
-											<input type="text" class="form-control" />
-										</div>
-									</div>
+
 									<div class="form-group">
 										<label class="col-md-3 control-label">Organization</label>
 										<div class="col-md-9">
@@ -216,6 +195,12 @@
 										</div>
 									</div>
 									<div class="form-group">
+										<label class="control-label col-md-3">Feature ID</label>
+										<div class="col-md-9">
+											<input type="text" class="form-control" />
+										</div>
+									</div>
+									<div class="form-group">
 										<label class="col-md-3 control-label">Application Name</label>
 										<div class="col-md-9">
 											<input type="text" class="form-control" />
@@ -233,9 +218,6 @@
 											<select class="form-control">
                                             <option>22.6</option>
                                             <option>22.5POST</option>
-                                            <option>22.7</option>
-                                            <option>22.8</option>
-                                            <option>22.9</option>
                                         </select>
 										</div>
 									</div>
@@ -368,19 +350,6 @@
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-md-3 control-label">Support Multiple qualifier value</label>
-										<div class="col-md-9">
-											<label class="radio-inline">
-                                            <input type="radio" name="multipleQualifierRadios" value="option1"  checked/>
-                                            Y
-                                        </label>
-											<label class="radio-inline">
-                                            <input type="radio" name="multipleQualifierRadios" value="option2" />
-                                            N
-                                        </label>
-										</div>
-									</div>
-									<div class="form-group">
 										<label class="col-md-3 control-label">Qualifier Name</label>
 										<div class="col-md-9">
 											<input type="text" class="form-control" />
@@ -475,7 +444,7 @@
 				//append icon
 				var iDev = document.createElement("div")
 				var i = document.createElement("i");
-				i.setAttribute("class","ion-chevron-down fa-2x text-inverse");
+				i.setAttribute("class", "ion-chevron-down fa-2x text-inverse");
 				iDev.appendChild(i);
 				qualifier.appendChild(iDev);
 				//append Qualifier Name

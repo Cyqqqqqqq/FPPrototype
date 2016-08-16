@@ -6,7 +6,7 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>Developer HomePage|Pending Features</title>
+		<title>Release Info</title>
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 		<meta content="" name="description" />
 		<meta content="" name="author" />
@@ -19,9 +19,20 @@
 		<link href="assets/css/style.min.css" rel="stylesheet" />
 		<link href="assets/css/style-responsive.min.css" rel="stylesheet" />
 		<link href="assets/css/theme/default.css" rel="stylesheet" id="theme" />
+
 		<!-- ================== END BASE CSS STYLE ================== -->
 		<!-- ================== BEGIN PAGE LEVEL CSS STYLE ================== -->
-		<link href="assets/plugins/DataTables/css/data-table.css" rel="stylesheet" />
+		<link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+		<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
+		<link href="assets/plugins/ionRangeSlider/css/ion.rangeSlider.css" rel="stylesheet" />
+		<link href="assets/plugins/ionRangeSlider/css/ion.rangeSlider.skinNice.css" rel="stylesheet" />
+		<link href="assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet" />
+		<link href="assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" />
+		<link href="assets/plugins/password-indicator/css/password-indicator.css" rel="stylesheet" />
+		<link href="assets/plugins/bootstrap-combobox/css/bootstrap-combobox.css" rel="stylesheet" />
+		<link href="assets/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+		<link href="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet" />
+		<link href="assets/plugins/jquery-tag-it/css/jquery.tagit.css" rel="stylesheet" />
 
 		<!-- ================== END PAGE LEVEL CSS STYLE ================== -->
 		<!-- ================== BEGIN BASE JS ================== -->
@@ -45,7 +56,7 @@
 				<div class="container-fluid">
 					<!-- begin mobile sidebar expand / collapse button -->
 					<div class="navbar-header">
-						<a href="index.html" class="navbar-brand"><span class="navbar-logo"></span>Feature Portal</a>
+						<a href="suppindex.html" class="navbar-brand"><span class="navbar-logo"></span>Feature Portal</a>
 						<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
                         <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
                         </span>
@@ -66,19 +77,19 @@
 						</li>
 						<li class="dropdown">
 							<a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle f-s-14">
-								<i class="fa fa-bell-o"></i><span class="label">3</span> </a>
+								<i class="fa fa-bell-o"></i><span class="label">1</span> </a>
 							<ul class="dropdown-menu media-list pull-right animated fadeInDown">
-								<li class="dropdown-header">Notifications (3)</li>
+								<li class="dropdown-header">Notifications (1)</li>
 								<li class="media">
 									<a href="javascript:;">
 										<div class="media-left">
-											<i class="fa fa-magic media-object bg-red"></i>
+											<i class="fa fa-database media-object bg-green"></i>
 										</div>
 										<div class="media-body">
 											<h6 class="media-heading">
-                                        Feature Reject</h6>
+                                       	Time to get SQL</h6>
 											<div class="text-muted f-s-11">
-												3 minutes ago</div>
+												R22.5</div>
 										</div>
 									</a>
 								</li>
@@ -87,8 +98,8 @@
 						</li>
 						<li class="dropdown navbar-user">
 							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="assets/img/user-12.jpg" alt="" />
-								<span class="hidden-xs">Developer</span> <b class="caret"></b></a>
+								<img src="assets/img/user-3.jpg" alt="" />
+								<span class="hidden-xs">ATH Supporter</span> <b class="caret"></b></a>
 							<ul class="dropdown-menu animated fadeInLeft">
 								<li class="arrow"></li>
 								<li><a href="javascript:;">Edit Profile</a></li>
@@ -112,10 +123,10 @@
 						<li class="nav-profile">
 							<div class="image">
 								<a href="javascript:;">
-									<img src="assets/img/user-12.jpg" alt="" /></a>
+									<img src="assets/img/user-3.jpg" alt="" /></a>
 							</div>
 							<div class="info">
-								Slahser^^ <small>Front end developer</small>
+								Crise <small>ATH Supporter</small>
 							</div>
 						</li>
 					</ul>
@@ -123,18 +134,9 @@
 					<!-- begin sidebar nav -->
 					<ul class="nav">
 						<li class="nav-header">Navigation</li>
-						<li class="has-sub active"><a href="javascript:;"><b class="caret pull-right"></b><i
-                        class="fa fa-table"></i><span>Features</span> </a>
-							<ul class="sub-menu">
-								<li><a href="index.html">My Features</a></li>
-								<li class='active'><a href="">Pending Features</a></li>
-								<li><a href="confirmedFeatures.html">Confirmed Features</a></li>
-							</ul>
-						</li>
-						<li><a href="Search.html"><i class="fa fa-search"></i> <span>Search</span></a></li>
-
-						<li><a href="releaseInfo.html"><i class="fa fa-info"></i> <span>Release Info</span></a></li>
-
+						<li><a href="suppindex.html"><i class="fa fa-search"></i> <span>Search</span></a></li>
+						<li><a href="generator.html"><i class="fa fa-database"></i> <span>Generator</span></a></li>
+						<li class="active"><a href="suppRelease.html"><i class="fa fa-info"></i> <span>Release Info</span></a></li>
 						<!-- end sidebar minify button -->
 					</ul>
 					<!-- end sidebar nav -->
@@ -149,129 +151,44 @@
 				<!-- begin breadcrumb -->
 				<!-- end breadcrumb -->
 				<!-- begin page-header -->
-				<h1 class="page-header">Pending Features <small>All Pending Features created by myself</small><a href="create.html" type="button" class="btn btn-primary m-r-5 m-b-5" style="float:right">Create</a></h1>
+				<h1 class="page-header">Release Information <small>Release targate and date</small></h1>
 				<!-- end page-header -->
 
 				<!-- begin row -->
 				<div class="row">
 					<!-- begin col-12 -->
-					<div class="col-md-12">
+					<div class="col-md-12" data-sortable-id="form-plugins-1">
 						<!-- begin panel -->
 						<div class="panel panel-inverse">
 							<div class="panel-heading">
-								<div class="panel-heading-btn">
-									<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-									<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
-									<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-									<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
-								</div>
-								<h4 class="panel-title">Features Table</h4>
+								<h4 class="panel-title">Current Release</h4>
 							</div>
 							<div class="panel-body">
-								<div class="table-responsive">
-									<table id="data-table" class="table table-striped table-bordered">
-										<thead>
-											<tr>
-												<th>Feature ID</th>
-												<th>Feature Name</th>
-												<th>Release</th>
-												<th>Modified</th>
-												<th>Modified By</th>
-												<th>Status</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr class="odd gradeX">
-												<td><a href="update.html">100_100_001_002</td>
-												<td>GEO Maintenance - Find Geographic Location</td>
-												<td>22.5</td>
-												<td>6/7/2016 10:05 AM</td>
-												<td>SUKY ZHEN (IRIS-ISD-OOCLL/ZHA)</td>
-												<td>Pending</td>
-											</tr>
-											<tr class="odd gradeX">
-												<td>100_100_001_002</td>
-												<td>GEO Maintenance - Find Geographic Location</td>
-												<td>22.5</td>
-												<td>6/7/2016 10:05 AM</td>
-												<td>SUKY ZHEN (IRIS-ISD-OOCLL/ZHA)</td>
-												<td>Pending</td>
-											</tr>
-											<tr class="odd gradeX">
-												<td>100_100_001_002</td>
-												<td>GEO Maintenance - Find Geographic Location</td>
-												<td>22.5</td>
-												<td>6/7/2016 10:05 AM</td>
-												<td>SUKY ZHEN (IRIS-ISD-OOCLL/ZHA)</td>
-												<td>Pending</td>
-											</tr>
-											<tr class="odd gradeX">
-												<td>100_100_001_002</td>
-												<td>GEO Maintenance - Find Geographic Location</td>
-												<td>22.5</td>
-												<td>6/7/2016 10:05 AM</td>
-												<td>SUKY ZHEN (IRIS-ISD-OOCLL/ZHA)</td>
-												<td>Pending</td>
-											</tr>
-											<tr class="odd gradeX">
-												<td>100_100_001_002</td>
-												<td>GEO Maintenance - Find Geographic Location</td>
-												<td>22.5</td>
-												<td>6/7/2016 10:05 AM</td>
-												<td>SUKY ZHEN (IRIS-ISD-OOCLL/ZHA)</td>
-												<td>Pending</td>
-											</tr>
-											<tr class="odd gradeX">
-												<td>100_100_001_002</td>
-												<td>GEO Maintenance - Find Geographic Location</td>
-												<td>22.5</td>
-												<td>6/7/2016 10:05 AM</td>
-												<td>SUKY ZHEN (IRIS-ISD-OOCLL/ZHA)</td>
-												<td>Pending</td>
-											</tr>
-											<tr class="odd gradeX">
-												<td>100_100_001_002</td>
-												<td>GEO Maintenance - Find Geographic Location</td>
-												<td>22.5</td>
-												<td>6/7/2016 10:05 AM</td>
-												<td>SUKY ZHEN (IRIS-ISD-OOCLL/ZHA)</td>
-												<td>Pending</td>
-											</tr>
-											<tr class="odd gradeX">
-												<td>100_100_001_002</td>
-												<td>GEO Maintenance - Find Geographic Location</td>
-												<td>22.5</td>
-												<td>6/7/2016 10:05 AM</td>
-												<td>SUKY ZHEN (IRIS-ISD-OOCLL/ZHA)</td>
-												<td>Pending</td>
-											</tr>
-											<tr class="odd gradeX">
-												<td>100_100_001_002</td>
-												<td>GEO Maintenance - Find Geographic Location</td>
-												<td>22.5</td>
-												<td>6/7/2016 10:05 AM</td>
-												<td>SUKY ZHEN (IRIS-ISD-OOCLL/ZHA)</td>
-												<td>Pending</td>
-											</tr>
-											<tr class="odd gradeX">
-												<td>100_100_001_002</td>
-												<td>GEO Maintenance - Find Geographic Location</td>
-												<td>22.5</td>
-												<td>6/7/2016 10:05 AM</td>
-												<td>SUKY ZHEN (IRIS-ISD-OOCLL/ZHA)</td>
-												<td>Pending</td>
-											</tr>
-											<tr class="odd gradeX">
-												<td>100_100_001_002</td>
-												<td>GEO Maintenance - Find Geographic Location</td>
-												<td>22.5</td>
-												<td>6/7/2016 10:05 AM</td>
-												<td>SUKY ZHEN (IRIS-ISD-OOCLL/ZHA)</td>
-												<td>Pending</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label class="col-md-3 control-label">Release Target</label>
+										<div class="col-md-8">
+											<div class="input-group">
+												<input type="text" class="form-control" name="start" value="22.5" />
+												<span class="input-group-addon">QA</span>
+												<select class="form-control">
+                                            		<option>2</option>
+                                            		<option>1</option>
+                                           		 	<option>3</option>
+                                        		</select>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Release Date</label>
+										<div class="col-md-8">
+											<div id="datepicker-inline">
+												<div></div>
+											</div>
+										</div>
+									</div>
+								</form>
+
 							</div>
 						</div>
 						<!-- end panel -->
@@ -279,6 +196,48 @@
 					<!-- end col-12 -->
 				</div>
 				<!-- end row -->
+				<div class="row">
+					<!-- begin col-12 -->
+					<div class="col-md-12" data-sortable-id="form-plugins-2">
+						<!-- begin panel -->
+						<div class="panel panel-inverse">
+							<div class="panel-heading">
+								<h4 class="panel-title">Next Release</h4>
+							</div>
+							<div class="panel-body">
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label class="col-md-3 control-label">Release Target</label>
+										<div class="col-md-8">
+											<div class="input-group">
+												<input type="text" class="form-control" name="start" value="22.6" />
+												<span class="input-group-addon">QA</span>
+												<select class="form-control">
+                                            		<option>1</option>
+                                            		<option>2</option>
+                                           		 	<option>3</option>
+                                        		</select>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Release Date</label>
+										<div class="col-md-8">
+											<div id="datepicker-inline2">
+												<div></div>
+											</div>
+										</div>
+									</div>
+								</form>
+								<button class="btn btn-sm btn-success" onclick="addQualifier()" style="float: right;bottom: 0;">Save</button>
+
+							</div>
+
+						</div>
+						<!-- end panel -->
+					</div>
+					<!-- end col-12 -->
+				</div>
 
 			</div>
 			<!-- end #content -->
@@ -310,9 +269,18 @@
 
 		<!-- ================== END BASE JS ================== -->
 		<!-- ================== BEGIN PAGE LEVEL JS ================== -->
-		<script src="assets/plugins/DataTables/js/jquery.dataTables.js"></script>
-		<script src="assets/js/dashboard-v2.min.js"></script>
-		<script src="assets/js/table-manage-default.demo.min.js"></script>
+		<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="assets/plugins/ionRangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+		<script src="assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+		<script src="assets/plugins/masked-input/masked-input.min.js"></script>
+		<script src="assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+		<script src="assets/plugins/password-indicator/js/password-indicator.js"></script>
+		<script src="assets/plugins/bootstrap-combobox/js/bootstrap-combobox.js"></script>
+		<script src="assets/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+		<script src="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+		<script src="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput-typeahead.js"></script>
+		<script src="assets/plugins/jquery-tag-it/js/tag-it.min.js"></script>
+		<script src="assets/js/form-plugins.demo.min.js"></script>
 		<script src="assets/js/apps.min.js"></script>
 
 		<!-- ================== END PAGE LEVEL JS ================== -->
@@ -320,8 +288,7 @@
 		<script>
 			$(document).ready(function() {
 				App.init();
-				//				DashboardV2.init();
-				TableManageDefault.init();
+				FormPlugins.init();
 			});
 		</script>
 
